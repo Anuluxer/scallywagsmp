@@ -24,10 +24,8 @@
             text-align: center;
             padding: 1em;
             background-image: url("bg.jpg");
-            /* Set a specific height */
             min-height: 200px;
 
-            /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -57,6 +55,7 @@
             margin: 20px 0;
             background-color: #fff;
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
@@ -114,8 +113,10 @@
         }
 
         .gallery img {
-            width: 50%;
-            max-width: 300px;
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
         }
 
@@ -125,7 +126,7 @@
             text-align: center;
             padding: 1em;
             width: 100%;
-            margin-top: auto; /* Push the footer to the bottom */
+            margin-top: auto;
         }
 
         footer p {
@@ -155,6 +156,7 @@
         <div style="background-color: #333; color: white; padding: 10px; text-align: center; border-radius: 8px; cursor: pointer;" onclick="copyToClip(this)">
             <p style="font-size: 18px; margin: 0;"><strong>Server IP:</strong> mc.scallywagsmp.com <i>(click to copy)</i></p>
         </div>
+        <img src="https://mcapi.us/server/image?ip=mc.scallywagsmp.com" alt="status" style="border-radius: 8px; margin-top: 20px;">
     </section>
 
     <section id="home">
@@ -191,7 +193,7 @@
 
     <section id="gallery" class="gallery">
         <h2>Gallery</h2>
-        <a href="https://discord.com/users/923350586588528780"><p>Contact Uperscuzzi to add pictures to the gallery.</p></a>
+        <a href="https://discord.com/users/923350586588528780"><p style="font-size: 16px;">Contact Uperscuzzi to add pictures to the gallery.</p></a>
         <img src="empty_gallery.jpg" alt="Empty Gallery">
     </section>
 

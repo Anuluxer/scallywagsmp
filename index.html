@@ -24,8 +24,10 @@
             text-align: center;
             padding: 1em;
             background-image: url("bg.jpg");
+            /* Set a specific height */
             min-height: 200px;
 
+            /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -34,7 +36,6 @@
 
         header img {
             height: 200px;
-            max-width: 100%;
         }
 
         nav {
@@ -49,6 +50,11 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: all 500ms;
+        }
+        
+        nav a:hover {
+           background-color: #333;
         }
 
         section {
@@ -114,20 +120,21 @@
         }
 
         .gallery img {
-            max-width: 30%;
-            height: auto;
+            max-height: 500px;
+            width: auto;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
         }
 
         footer {
+            margin: 20px;
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1em;
             width: 100%;
-            margin-top: auto;
+            margin-top: auto; /* Push the footer to the bottom */
         }
 
         footer p {
@@ -146,11 +153,13 @@
     <nav>
         <a href="#home"><i class="fas fa-home"></i> Home</a>
         <a href="#features"><i class="fas fa-star"></i> Features</a>
+        <a href="#plugins"><i class="fas fa-plug"></i> Plugins</a>
         <a href="#rules"><i class="fas fa-gavel"></i> Rules</a>
         <a href="#community"><i class="fas fa-users"></i> Community</a>
         <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
         <a href="#donate"><i class="fas fa-donate"></i> Donate</a>
         <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="#socials"><i class="fas fa-hashtag"></i> Socials</a>
     </nav>
 
     <section id="ip">
@@ -175,6 +184,17 @@
         </ul>
     </section>
 
+    <section id="plugins" class="plugins">
+        <h2>Plugins</h2>
+        <ul>
+            <li><i class="fas fa-plug"></i> AuctionHouse</li>
+            <li><i class="fas fa-plug"></i> AureliumSkills</li>
+            <li><i class="fas fa-plug"></i> EconomyShop</li>
+            <li><i class="fas fa-plug"></i> GrapplingHook</li>
+            <li><i class="fas fa-plug"></i> CopperItems</li>
+        </ul>
+    </section>
+
     <section id="rules" class="rules">
         <h2>Rules</h2>
         <ul>
@@ -195,7 +215,7 @@
     <section id="gallery" class="gallery">
         <h2>Gallery</h2>
         <a href="https://discord.com/users/923350586588528780"><p style="font-size: 16px;">Contact Uperscuzzi to add pictures to the gallery.</p></a>
-        <img src="empty_gallery.jpg" alt="Empty Gallery">
+        <img src="gallery1.png" alt="Empty Gallery">
     </section>
 
     <section id="donate">
